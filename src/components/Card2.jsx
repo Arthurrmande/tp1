@@ -5,7 +5,7 @@ function Card2({ icon, indicateur, montant, pourcentage, darkMode }) {
   const isNegative = pourcentage.startsWith("-");
 
   return (
-    <section className={`rounded-lg p-6 transition ${darkMode ? "bg-dark-card-bg" : "bg-light-card-bg"}`}>
+    <section className={`rounded-lg p-6 transition ${darkMode ? "bg-dark-card-bg hover:bg-gray-700" : "bg-light-card-bg hover:bg-gray-200"}`}>
       
       <div className="flex items-center justify-between">
         <span className={`text-sm font-bold ${darkMode ? "text-dark-text" : "text-light-text"}`}>

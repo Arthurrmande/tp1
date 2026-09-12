@@ -9,7 +9,7 @@ function Card({ icon, name, followers, jours, platform, darkMode }) {
   };
 
   return (
-    <section className={`relative flex flex-col items-center text-center rounded-md px-6 py-7 overflow-hidden hover:bg-gray-200 transition duration-200 ${darkMode ? "bg-dark-card-bg" : "bg-light-card-bg"}`}>
+    <section className={`relative flex flex-col items-center text-center rounded-md px-6 py-7 overflow-hidden transition duration-200 ${darkMode ? "bg-dark-card-bg hover:bg-gray-700" : "bg-light-card-bg hover:bg-gray-200"}`}>
       
       <div className={`absolute top-0 left-0 w-full h-1 ${topColor[platform]}`}> </div>
 
