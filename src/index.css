@@ -75,7 +75,7 @@
 }
 
 .counter {
-  animation: count 2s ease-out forwards;
+  animation: count 6s ease-out forwards;
   counter-reset: num var(--num);
 }
 
