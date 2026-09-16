@@ -1,6 +1,4 @@
-/* index.css */
 @import "tailwindcss";
-
 
 @theme inline {
   --color-lime-green: var(--clr-lime-green);
@@ -11,7 +9,6 @@
   --color-youtube: var(--clr-youtube);
 
   --color-dark-toggle: var(--clr-dark-toggle);
-
   --color-light-toggle: var(--clr-light-toggle);
 
   --color-dark-bg: var(--clr-dark-bg);
@@ -67,5 +64,31 @@
 
     font-family: "Inter", sans-serif;
     font-weight: 400;
+  }
+}
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.counter {
+  animation: count 2s ease-out forwards;
+  counter-reset: num var(--num);
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+@keyframes count {
+  from {
+    --num: 0;
+  }
+
+  to {
+    --num: var(--final);
   }
 }
